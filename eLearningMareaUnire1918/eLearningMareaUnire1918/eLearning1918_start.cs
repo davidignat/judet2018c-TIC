@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using System.Windows.Forms.VisualStyles;
 
 namespace eLearningMareaUnire1918
 {
@@ -174,13 +175,13 @@ namespace eLearningMareaUnire1918
         {
             if(auto_manualButton.Text == "Auto")
             {
-                currentImage++;
                 if(currentImage == maxNumberOfImages)
                 {
                     currentImage = 0;
                     imageHandler(maxNumberOfImages);
                     return;
                 }
+                currentImage++;
 
                 imageHandler(currentImage);
 
@@ -203,6 +204,29 @@ namespace eLearningMareaUnire1918
 
             imageHandler(currentImage);
             previousButton.Enabled = true;
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            string email = emailTB.Text;
+            string password = parolaTB.Text;
+
+            SqlCommand cmd = new SqlCommand("SELECT IdUtilizator FROM Utilizatori WHERE EmailUtilizator = @email AND ParolaUtilizator = @pass", conn);
+            cmd.Parameters.AddWithValue("email", email);
+            cmd.Parameters.AddWithValue("pass", password);
+            var reader = cmd.ExecuteScalar();
+            if(reader != null)
+            {
+                eLearning1918_Elev elevForm = new eLearning1918_Elev(email);
+                elevForm.Show();
+                this.Hide();
+
+            } else
+            {
+                MessageBox.Show("Eroare de autentificare!");
+                parolaTB.Text = emailTB.Text = "";
+            }
+
         }
     }
 }

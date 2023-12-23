@@ -39,8 +39,15 @@ namespace eLearningMareaUnire1918
             this.nextButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.loginButton = new System.Windows.Forms.Button();
+            this.emailTB = new System.Windows.Forms.TextBox();
+            this.parolaTB = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -134,11 +141,72 @@ namespace eLearningMareaUnire1918
             this.timer.Interval = 2000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.parolaTB);
+            this.groupBox2.Controls.Add(this.emailTB);
+            this.groupBox2.Controls.Add(this.loginButton);
+            this.groupBox2.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(542, 86);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(355, 383);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Autentificare";
+            // 
+            // loginButton
+            // 
+            this.loginButton.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.Location = new System.Drawing.Point(121, 332);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(124, 38);
+            this.loginButton.TabIndex = 8;
+            this.loginButton.Text = "Login";
+            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
+            // emailTB
+            // 
+            this.emailTB.Location = new System.Drawing.Point(121, 80);
+            this.emailTB.Name = "emailTB";
+            this.emailTB.Size = new System.Drawing.Size(200, 28);
+            this.emailTB.TabIndex = 9;
+            // 
+            // parolaTB
+            // 
+            this.parolaTB.Location = new System.Drawing.Point(121, 222);
+            this.parolaTB.Name = "parolaTB";
+            this.parolaTB.PasswordChar = '*';
+            this.parolaTB.Size = new System.Drawing.Size(200, 28);
+            this.parolaTB.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 21);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "E-mail:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 225);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 21);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Parola:";
+            // 
             // eLearning1918_start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(923, 563);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label1);
@@ -147,6 +215,8 @@ namespace eLearningMareaUnire1918
             this.Load += new System.EventHandler(this.eLearning1918_start_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,6 +233,12 @@ namespace eLearningMareaUnire1918
         private System.Windows.Forms.Button previousButton;
         private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox parolaTB;
+        private System.Windows.Forms.TextBox emailTB;
+        private System.Windows.Forms.Button loginButton;
     }
 }
 

@@ -18,3 +18,14 @@ C:\Users\vsynk\Desktop\Judet2018\eLearningMareaUnire1918\eLearningMareaUnire1918
 C:\Users\vsynk\Desktop\Judet2018\eLearningMareaUnire1918\eLearningMareaUnire1918\obj\Debug\eLearningMareaUnire1918.csproj.CoreCompileInputs.cache
 C:\Users\vsynk\Desktop\Judet2018\eLearningMareaUnire1918\eLearningMareaUnire1918\obj\Debug\eLearningMareaUnire1918.exe
 C:\Users\vsynk\Desktop\Judet2018\eLearningMareaUnire1918\eLearningMareaUnire1918\obj\Debug\eLearningMareaUnire1918.pdb
+C:\Users\vsynk\Desktop\judet2018c-TIC\eLearningMareaUnire1918\eLearningMareaUnire1918\bin\Debug\eLearningMareaUnire1918.exe.config
+C:\Users\vsynk\Desktop\judet2018c-TIC\eLearningMareaUnire1918\eLearningMareaUnire1918\bin\Debug\eLearningMareaUnire1918.exe
+C:\Users\vsynk\Desktop\judet2018c-TIC\eLearningMareaUnire1918\eLearningMareaUnire1918\bin\Debug\eLearningMareaUnire1918.pdb
+C:\Users\vsynk\Desktop\judet2018c-TIC\eLearningMareaUnire1918\eLearningMareaUnire1918\obj\Debug\eLearningMareaUnire1918.csproj.AssemblyReference.cache
+C:\Users\vsynk\Desktop\judet2018c-TIC\eLearningMareaUnire1918\eLearningMareaUnire1918\obj\Debug\eLearningMareaUnire1918.eLearning1918_start.resources
+C:\Users\vsynk\Desktop\judet2018c-TIC\eLearningMareaUnire1918\eLearningMareaUnire1918\obj\Debug\eLearningMareaUnire1918.Properties.Resources.resources
+C:\Users\vsynk\Desktop\judet2018c-TIC\eLearningMareaUnire1918\eLearningMareaUnire1918\obj\Debug\eLearningMareaUnire1918.csproj.GenerateResource.cache
+C:\Users\vsynk\Desktop\judet2018c-TIC\eLearningMareaUnire1918\eLearningMareaUnire1918\obj\Debug\eLearningMareaUnire1918.csproj.CoreCompileInputs.cache
+C:\Users\vsynk\Desktop\judet2018c-TIC\eLearningMareaUnire1918\eLearningMareaUnire1918\obj\Debug\eLearningMareaUnire1918.exe
+C:\Users\vsynk\Desktop\judet2018c-TIC\eLearningMareaUnire1918\eLearningMareaUnire1918\obj\Debug\eLearningMareaUnire1918.pdb
+C:\Users\vsynk\Desktop\judet2018c-TIC\eLearningMareaUnire1918\eLearningMareaUnire1918\obj\Debug\eLearningMareaUnire1918.eLearning1918_Elev.resources
