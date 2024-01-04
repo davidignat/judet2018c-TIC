@@ -16,7 +16,7 @@ namespace eLearningMareaUnire1918
     public partial class eLearning1918_start : Form
     {
 
-        public string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\eLearning1918.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=False";
+        private string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\eLearning1918.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=False";
         private SqlConnection conn;
         /// De facut cu parola alt formular pt database
         public eLearning1918_start()
@@ -209,7 +209,10 @@ namespace eLearningMareaUnire1918
         private void loginButton_Click(object sender, EventArgs e)
         {
             string email = emailTB.Text;
+            email = "elev1@yahoo.com"; // Faster
+          
             string password = parolaTB.Text;
+            password = "elev1"; // Faster
 
             SqlCommand cmd = new SqlCommand("SELECT IdUtilizator FROM Utilizatori WHERE EmailUtilizator = @email AND ParolaUtilizator = @pass", conn);
             cmd.Parameters.AddWithValue("email", email);
@@ -217,7 +220,7 @@ namespace eLearningMareaUnire1918
             var reader = cmd.ExecuteScalar();
             if(reader != null)
             {
-                eLearning1918_Elev elevForm = new eLearning1918_Elev(email);
+                eLearning1918_Elev elevForm = new eLearning1918_Elev(email, connString);
                 elevForm.Show();
                 this.Hide();
 
